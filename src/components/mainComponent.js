@@ -7,7 +7,7 @@ import Popup from "./Modal";
 
 const MainComponent = () => {
   const { cartItems } = useSelector((state) => state.cart);
-  const { isOpen } = useSelector((state) => state.modal)
+  const { isOpen } = useSelector((state) => state.modal);
   const dispatch = useDispatch();
 
   useEffect(() => {

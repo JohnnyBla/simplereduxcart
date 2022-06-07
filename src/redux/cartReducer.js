@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { cartItems } from "../shared/cartItems";
 
 const initialState = {
@@ -42,5 +42,6 @@ const cartSlice = createSlice({
 
 console.log(cartSlice);
 
-export const { clearCart, removeItem, increase, decrease, calculateTotals } = cartSlice.actions;
+export const { clearCart, removeItem, increase, decrease, calculateTotals } =
+  cartSlice.actions;
 export default cartSlice.reducer;
